@@ -18,6 +18,7 @@ nav{
     height: 50px;
     align-items: center;
     justify-content: space-around;
+    animation: nav 1s ;
     font-size: 20px;
     background: #ffffff80;
     box-shadow: 0 0  2px rgba(150, 215, 235, 0.235);
@@ -59,6 +60,7 @@ nav p{
     width: 250px;
     height: 300px;
     margin: 90px 40px;
+    animation: task 1s ;
     border-radius: 5px 15px 5px 20px;
     background: linear-gradient(45deg,#ffffff80,#f9f9f950);
 }
@@ -94,6 +96,7 @@ nav p{
 }
 .switch{
     position: relative;
+    animation: switch 0.9s ;
 }
 .switch .tap{
     position: absolute;
@@ -156,4 +159,29 @@ nav p{
         align-items: center;
         display: flex;
     }
+}
+
+/* //animation  */
+@keyframes nav {
+    0%{
+        transform: scale(0.9);
+        transition: 0.6s;
+    }  
+    100%{ }
+}
+@keyframes task {
+    0%{
+        transform: translateY(20px);
+        transition: 0.6s;
+    }
+    100%{}
+}
+
+@keyframes switch {
+        0%{
+            transform: translateX(30px);
+            opacity: 0.8;
+            transition: 0.6s;
+        }
+        100%{ opacity: 1;}
 }
